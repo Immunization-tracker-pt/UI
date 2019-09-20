@@ -1,4 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
 html {
   font-size: 62.5%;
 }
@@ -14,11 +21,16 @@ nav {
   border-bottom: 0.5px solid black;
   top: 0;
 }
+nav img {
+  max-height: 7.8vh;
+  max-width: 25vw;
+  margin-left: -14%;
+}
 nav .mobile-nav {
-  margin-left: 34%;
+  margin-left: 20%;
 }
 nav .mobile-nav i {
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: #F6F6F8;
 }
 nav ul {
@@ -56,29 +68,22 @@ main .head {
   height: 73vh;
   background-image: url("https://cdn.pixabay.com/photo/2015/05/24/06/13/medical-781422_960_720.jpg");
   background-repeat: no-repeat;
+  background-position: top;
   background-blend-mode: darken;
   background-color: rgba(50, 50, 50, 0.4);
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
-main .head h1 {
-  margin-top: 2vh;
-  font-size: 4rem;
-  font-weight: 900;
-  color: #C60021;
-}
-main .head p {
-  font-size: 1.8rem;
-  line-height: 3rem;
-  color: #E3E3E3;
-  background-color: rgba(80, 80, 80, 0.2);
-}
-main .head p span {
-  color: maroon;
-  font-weight: 800;
+main .head h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  color: #F6F6F8;
+  padding: 0 3%;
 }
 main .content-section {
   height: 99.9vh;
