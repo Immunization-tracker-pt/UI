@@ -124,6 +124,8 @@ nav ul li a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 175px;
+  max-height: 175px;
   width: 48%;
   margin: 1%;
   box-sizing: border-box;
@@ -132,6 +134,7 @@ nav ul li a {
   border: 1px solid black;
 }
 .profile-wrapper .profile-card h3 {
+  color: #C60021;
   font-size: 1.3rem;
   margin-bottom: 1%;
   font-weight: 900;
@@ -141,11 +144,17 @@ nav ul li a {
   margin: 1% 0;
   font-weight: 800;
 }
+.profile-wrapper .profile-card p {
+  text-align: center;
+}
 .profile-wrapper .profile-card a {
   margin-top: 1%;
+  text-decoration: none;
 }
 .profile-wrapper .profile-card img {
   margin-top: 0;
+  max-height: 100px;
+  max-width: 100px;
 }
 .profile-wrapper .profile-card:first-child {
   margin-right: 10vw;

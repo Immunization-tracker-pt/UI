@@ -6,14 +6,18 @@
     .flex();
     flex-wrap: wrap;
     margin: 4% 0;
+
     .profile-card{
         .flex(column, space-around);
+        height: 175px;
+        max-height: 175px;
         width: 48%;
         margin: 1%;
         box-sizing: border-box;
         padding: 2%;
 
         h3{
+            color: @accentText;
             font-size: 1.3rem;
             margin-bottom: 1%;
             font-weight: 900;
@@ -25,14 +29,21 @@
             font-weight: 800;
         }
 
+        p{
+            text-align: center;
+        }
+
         a{
             margin-top: 1%;
+            text-decoration: none;
         }
         
         background: white;
         border: 1px solid black;
         img{
             margin-top: 0; //over-riding head img margins
+            max-height: 100px;
+            max-width: 100px;
         }
         &:first-child{
             //forcing first-child to be solo
