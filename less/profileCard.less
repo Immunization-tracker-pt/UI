@@ -1,0 +1,43 @@
+.about-head{
+    height: fit-content;
+}
+
+.profile-wrapper{
+    .flex();
+    flex-wrap: wrap;
+    margin: 4% 0;
+    .profile-card{
+        .flex(column, space-around);
+        width: 48%;
+        margin: 1%;
+        box-sizing: border-box;
+        padding: 2%;
+
+        h3{
+            font-size: 1.3rem;
+            margin-bottom: 1%;
+            font-weight: 900;
+        }
+
+        h4{
+            font-size: 1.1rem;
+            margin: 1% 0;
+            font-weight: 800;
+        }
+
+        a{
+            margin-top: 1%;
+        }
+        
+        background: white;
+        border: 1px solid black;
+        img{
+            margin-top: 0; //over-riding head img margins
+        }
+        &:first-child{
+            //forcing first-child to be solo
+            margin-right: 10vw;
+            margin-left: 10vw;
+        }
+    }
+}

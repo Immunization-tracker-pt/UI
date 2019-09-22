@@ -108,6 +108,49 @@ nav ul li a {
 .head .about-sub-head {
   height: 12vh;
 }
+.about-head {
+  height: fit-content;
+}
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4% 0;
+}
+.profile-wrapper .profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 48%;
+  margin: 1%;
+  box-sizing: border-box;
+  padding: 2%;
+  background: white;
+  border: 1px solid black;
+}
+.profile-wrapper .profile-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1%;
+  font-weight: 900;
+}
+.profile-wrapper .profile-card h4 {
+  font-size: 1.1rem;
+  margin: 1% 0;
+  font-weight: 800;
+}
+.profile-wrapper .profile-card a {
+  margin-top: 1%;
+}
+.profile-wrapper .profile-card img {
+  margin-top: 0;
+}
+.profile-wrapper .profile-card:first-child {
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
 footer {
   height: 8vh;
   display: flex;
