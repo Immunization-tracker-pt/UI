@@ -4,6 +4,14 @@ main{
 
     .content-section{
         height: 99.9vh;
+
+        &:nth-child(odd){
+            background-color: @accentText;
+        }   
+
+        &:nth-child(even){
+            background-color: @slate;
+        }    
     }
 
 }
