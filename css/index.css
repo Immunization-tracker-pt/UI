@@ -74,21 +74,26 @@ nav ul li a {
   justify-content: flex-start;
   align-items: center;
 }
-.head .sub-head {
+.head img {
+  margin-top: 2vh;
+}
+.head .sub-head,
+.head .about-sub-head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
   background-color: #C60021;
 }
-.head .sub-head .mid-syringe {
+.head .sub-head .mid-syringe,
+.head .about-sub-head .mid-syringe {
   width: 120%;
   margin-right: 27%;
   margin-top: -15%;
   margin-bottom: -5%;
 }
-.head .sub-head h3 {
+.head .sub-head h3,
+.head .about-sub-head h3 {
   font-family: 'PT Sans', sans-serif;
   font-size: 2rem;
   margin-top: 10%;
@@ -97,13 +102,23 @@ nav ul li a {
   color: #F6F6F8;
   padding: 0 3%;
 }
+.head .sub-head {
+  margin-top: 20vh;
+}
+.head .about-sub-head {
+  height: 12vh;
+}
 footer {
-  height: 5vh;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   background-color: #C60021;
+}
+footer div p {
+  font-size: 1.2rem;
+  margin-bottom: -1vh;
 }
 footer .footer-container {
   display: flex;
@@ -112,12 +127,14 @@ footer .footer-container {
   align-items: center;
 }
 footer .footer-container .nav-container {
+  width: 95vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 footer .footer-container .nav-container a {
+  font-size: 1.3rem;
   color: white;
   text-decoration: none;
 }
