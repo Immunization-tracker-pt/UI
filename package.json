@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Immunization-tracker-pt/UI#readme",
   "dependencies": {
     "less": "^3.10.3",
-    "less-watch-compiler": "^1.14.1"
+    "less-watch-compiler": "^1.14.1",
+    "lessc": "^1.0.2"
   }
 }
