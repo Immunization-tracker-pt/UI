@@ -454,7 +454,7 @@ less-watch-compiler@^1.14.1:
     opencollective-postinstall "^2.0.1"
     shelljs ">= 0.4.0"
 
-less@^3.10.3, less@^3.8.1:
+less@^3.10.3, less@^3.8.1, less@^3.9.0:
   version "3.10.3"
   resolved "https://registry.yarnpkg.com/less/-/less-3.10.3.tgz#417a0975d5eeecc52cff4bcfa3c09d35781e6792"
   integrity sha512-vz32vqfgmoxF1h3K4J+yKCtajH0PWmjkIFgbs5d78E/c/e+UQTnI+lWK+1eQRE95PXM2mC3rJlLSSP9VQHnaow==
@@ -469,6 +469,13 @@ less@^3.10.3, less@^3.8.1:
     promise "^7.1.1"
     request "^2.83.0"
     source-map "~0.6.0"
+
+lessc@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/lessc/-/lessc-1.0.2.tgz#b9bedd7f1953f142bbe70ffc00a2378d19a5152a"
+  integrity sha512-cv7EXQRiD3Cu2Vsy3S9C89G01kOv0TrLQMoWHxscCgkMYdhEvknhaINeQkZbPmUlJ87AEzjPm0y/14Cg9j7/ug==
+  dependencies:
+    less "^3.9.0"
 
 lodash@^4.3.0:
   version "4.17.15"
