@@ -2,6 +2,7 @@ export class ProfileCard {
     constructor(dev){
         //Name, imgSrc, role, description, github
        Object.keys(dev).forEach(key => this[key] = dev[key]);
+       this.gitHandle = this.github.split('/')[this.github.split('/').length - 1];
     }
 
     produceElement(type, details1, details2){
@@ -12,7 +13,7 @@ export class ProfileCard {
                          break;
 
             case 'a'   : newElement.href = details1; 
-                         newElement.innerText = details2 ? details2 : details1;
+                         newElement.innerText = `GitHub: ${details2 ? details2 : details1}`;
                          break;
             
             default    : newElement.innerText = details1;
@@ -28,7 +29,7 @@ export class ProfileCard {
         const img = this.produceElement('img', this.imgSrc, `Image of ${this.name}`);
         const roleH4 = this.produceElement('h4', this.role);
         const descP = this.produceElement('p', this.description);
-        const link = this.produceElement('a', this.github);
+        const link = this.produceElement('a', this.github, this.gitHandle);
 
         [nameH3, img, roleH4, descP, link].forEach(el => div.appendChild(el));
 

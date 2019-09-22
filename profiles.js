@@ -7,7 +7,7 @@ console.log(wrapper)
 const joshua = new ProfileCard({name: 'Joshua Burleson',
                                 imgSrc: "https://media.licdn.com/dms/image/C4E03AQG9S9pTUdI-6w/profile-displayphoto-shrink_200_200/0?e=1574899200&v=beta&t=OJPK-gkr-PwL6Lg4_xVAS39ynlWTSuZoTCV5-CIlAs0",
                                 role: "UI Engineer",
-                                description: "UI Engineer / Principal LESS developer",
+                                description: "UI Engineer / Principal LESS Developer",
                                 github: "https://github.com/Joshua-Burleson"});
 
 const jerome = new ProfileCard({

@@ -134,6 +134,7 @@ nav ul li a {
   border: 1px solid black;
 }
 .profile-wrapper .profile-card h3 {
+  color: #C60021;
   font-size: 1.3rem;
   margin-bottom: 1%;
   font-weight: 900;
@@ -148,6 +149,7 @@ nav ul li a {
 }
 .profile-wrapper .profile-card a {
   margin-top: 1%;
+  text-decoration: none;
 }
 .profile-wrapper .profile-card img {
   margin-top: 0;
