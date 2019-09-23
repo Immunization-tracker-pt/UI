@@ -10,15 +10,26 @@ nav{
     img{
         max-height: 7.8vh;
         max-width: 25vw;
-        margin-left: -14%;
+        position: absolute;
+        left: 3%;
+
+        @media @desktop{
+            left: 1%;
+        }
     }
 
     .mobile-nav{
-        margin-left: 20%;
+        position: absolute;
+        right: 53%;
+        left: 47%;
 
         i{
             font-size: 2rem;
             color: @eggshell;
+        }
+
+        @media @desktop{
+            display: none;
         }
 
     }
@@ -29,21 +40,47 @@ nav{
         border-bottom: none;
         background: @eggshell;
         height: 35vh;
-        width: 65vw;
+        width: 55vw;
         margin-top: 43vh;
-        margin-left: -34%;
         visibility: hidden;
+
+        @media @desktop {
+            .flex(row, space-around);
+            border: none;
+            background: @accentText;
+            height: auto;
+            width: 95vw;
+            margin-top: 0;
+            margin-left: 5%;
+            visibility: visible;
+        }
 
         li{
             width: 100%;
             height: 25%;
             .flex();
-            font-size: 2.25rem;
+            font-size: 2.5rem;
             border-bottom: 1px solid black;
+
+            @media @desktop{
+                width: auto;
+                height: auto;
+                border: none;
+                font-weight: 600;
+            }
             
             a{
                 color: @accentText;
                 text-decoration: none;
+
+                @media @desktop{
+                    color: black;
+                    
+                    &:hover{
+                        color: white;
+                    }
+                }
+
             }
         }
     }
