@@ -24,14 +24,27 @@ nav {
 nav img {
   max-height: 7.8vh;
   max-width: 25vw;
-  margin-left: -14%;
+  position: absolute;
+  left: 3%;
+}
+@media (min-width: 1000px) {
+  nav img {
+    left: 1%;
+  }
 }
 nav .mobile-nav {
-  margin-left: 20%;
+  position: absolute;
+  right: 53%;
+  left: 47%;
 }
 nav .mobile-nav i {
   font-size: 2rem;
   color: #F6F6F8;
+}
+@media (min-width: 1000px) {
+  nav .mobile-nav {
+    display: none;
+  }
 }
 nav ul {
   display: flex;
@@ -42,10 +55,24 @@ nav ul {
   border-bottom: none;
   background: #F6F6F8;
   height: 35vh;
-  width: 65vw;
+  width: 55vw;
   margin-top: 43vh;
-  margin-left: -34%;
   visibility: hidden;
+}
+@media (min-width: 1000px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    background: #C60021;
+    height: auto;
+    width: 95vw;
+    margin-top: 0;
+    margin-left: 5%;
+    visibility: visible;
+  }
 }
 nav ul li {
   width: 100%;
@@ -54,12 +81,28 @@ nav ul li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   border-bottom: 1px solid black;
+}
+@media (min-width: 1000px) {
+  nav ul li {
+    width: auto;
+    height: auto;
+    border: none;
+    font-weight: 600;
+  }
 }
 nav ul li a {
   color: #C60021;
   text-decoration: none;
+}
+@media (min-width: 1000px) {
+  nav ul li a {
+    color: black;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
 }
 .head {
   height: 98vh;
@@ -102,11 +145,17 @@ nav ul li a {
   color: #F6F6F8;
   padding: 0 3%;
 }
+@media (max-width: 340px) {
+  .head .sub-head h3,
+  .head .about-sub-head h3 {
+    font-size: 1.5rem;
+  }
+}
 .head .sub-head {
   margin-top: 20vh;
 }
 .head .about-sub-head {
-  height: 12vh;
+  height: 14vh;
 }
 .about-head {
   height: fit-content;
@@ -168,9 +217,19 @@ footer {
   align-items: space-around;
   background-color: #C60021;
 }
+@media (min-width: 1000px) {
+  footer {
+    align-items: center;
+  }
+}
 footer div p {
   font-size: 1.2rem;
   margin-bottom: -1vh;
+}
+@media (min-width: 1000px) {
+  footer div p {
+    margin-bottom: 1vh;
+  }
 }
 footer .footer-container {
   display: flex;
@@ -189,6 +248,11 @@ footer .footer-container .nav-container a {
   font-size: 1.3rem;
   color: white;
   text-decoration: none;
+}
+@media (min-width: 1000px) {
+  footer .footer-container .nav-container {
+    width: 30vw;
+  }
 }
 main {
   margin-top: 8vh;

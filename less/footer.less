@@ -3,10 +3,18 @@ footer{
     .flex(row, center, space-around);
     background-color: @accentText;
 
+    @media @desktop{
+        align-items: center;
+    }
+
     div{
         p{
             font-size: 1.2rem;
             margin-bottom: -1vh;
+
+            @media @desktop{
+                margin-bottom: 1vh;
+            }
         }
     }
 
@@ -20,6 +28,10 @@ footer{
                 font-size: 1.3rem;
                 color: white;
                 text-decoration: none;
+            }
+
+            @media @desktop{
+                width: 30vw;
             }
         }
     }
