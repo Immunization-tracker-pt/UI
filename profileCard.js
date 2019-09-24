@@ -23,17 +23,17 @@ export class ProfileCard {
     }
 
     render(){
-        const div = document.createElement('div');
-        div.className = "profile-card";
+        const profileDiv = document.createElement('div');
+        profileDiv.className = "profile-card";
         const nameH3 = this.produceElement('h3', this.name);
         const img = this.produceElement('img', this.imgSrc, `Image of ${this.name}`);
         const roleH4 = this.produceElement('h4', this.role);
         const descP = this.produceElement('p', this.description);
         const link = this.produceElement('a', this.github, this.gitHandle);
 
-        [nameH3, img, roleH4, descP, link].forEach(el => div.appendChild(el));
+        [nameH3, img, roleH4, descP, link].forEach(element => profileDiv.appendChild(element));
 
-        return div;
+        return profileDiv;
 
     }
 

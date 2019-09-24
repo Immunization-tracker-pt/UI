@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     margin: 4% 0;
 
+    @media @desktop {
+        margin: 0;
+    }
+
     .profile-card{
         .flex(column, space-around);
         height: 175px;
@@ -15,18 +19,51 @@
         margin: 1%;
         box-sizing: border-box;
         padding: 2%;
+        background: #091f36;
+        color: gray;
+        border: 1px solid black;
+
+        @media @desktop {
+            min-height: 25vmax;
+            width: 25vmax;
+        }
 
         h3{
-            color: @accentText;
+            color: #D61A3C;
             font-size: 1.3rem;
-            margin-bottom: 1%;
+            margin-top: -1%;
+            margin-bottom: 2%;
             font-weight: 900;
+
+            @media @desktop {
+                font-size: 2.5rem;
+                margin-top: -4%;
+            }
+        }
+
+        img{
+            margin-top: 0; //over-riding head img margins
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+            border-radius: 60%;
+
+            @media @desktop {
+                height: 14rem;
+                width: 14rem;
+            }
+
         }
 
         h4{
             font-size: 1.1rem;
             margin: 1% 0;
             font-weight: 800;
+
+            @media @desktop {
+                font-size: 1.5rem;
+            }
+
         }
 
         p{
@@ -34,21 +71,27 @@
         }
 
         a{
-            margin-top: 1%;
+            font-size: 1.25rem;
+            margin-top: 2%;
+            margin-bottom: -1%;
+            color: #612999;
             text-decoration: none;
+
+            @media @desktop {
+                margin-bottom: -5%;
+            }
+
         }
-        
-        background: white;
-        border: 1px solid black;
-        img{
-            margin-top: 0; //over-riding head img margins
-            max-height: 100px;
-            max-width: 100px;
-        }
+
         &:first-child{
             //forcing first-child to be solo
             margin-right: 10vw;
             margin-left: 10vw;
+
+            @media @desktop{
+                margin-right: 30vw;
+                margin-left: 30vw;
+            }
         }
     }
 }
