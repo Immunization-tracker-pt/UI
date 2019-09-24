@@ -197,6 +197,10 @@ nav ul li a {
   .head .about-sub-head .mid-syringe {
     visibility: hidden;
   }
+  .head .about-sub-head h3 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
 }
 .section-one {
   display: flex;
@@ -252,7 +256,7 @@ nav ul li a {
 }
 @media (min-width: 1000px) {
   .profile-wrapper {
-    margin: 0;
+    margin: -2% 0 4%;
   }
 }
 .profile-wrapper .profile-card {
@@ -272,7 +276,7 @@ nav ul li a {
 }
 @media (min-width: 1000px) {
   .profile-wrapper .profile-card {
-    min-height: 25vmax;
+    min-height: 23vmax;
     width: 25vmax;
   }
 }
@@ -309,11 +313,16 @@ nav ul li a {
 }
 @media (min-width: 1000px) {
   .profile-wrapper .profile-card h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .profile-wrapper .profile-card p {
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .profile-wrapper .profile-card p {
+    font-size: 1.5rem;
+  }
 }
 .profile-wrapper .profile-card a {
   font-size: 1.25rem;
@@ -325,6 +334,7 @@ nav ul li a {
 @media (min-width: 1000px) {
   .profile-wrapper .profile-card a {
     margin-bottom: -5%;
+    font-size: 1.6rem;
   }
 }
 .profile-wrapper .profile-card:first-child {
