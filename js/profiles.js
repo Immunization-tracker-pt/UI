@@ -41,10 +41,18 @@ const jenny = new ProfileCard({
         github: "https://github.com/jennyobryant"
 });
 
+const ray = new ProfileCard({
+name: 'Ray Aguilar',
+imgSrc: "https://media.licdn.com/dms/image/C4E03AQFV_B-IuQevrw/profile-displayphoto-shrink_200_200/0?e=1574899200&v=beta&t=tMk866CeW9eL2SB_uZX-Oa6LxVcfF2QV-MV-yuYO42w",
+role: "UI Engineer",
+description: "UI Engineer",
+github: "https://github.com/Ray-D-Aguilar"
+});
+
 wrapper.appendChild(enoka.render()); // Enoka
 wrapper.appendChild(joshua.render()); // Joshua
 wrapper.appendChild(jerome.render()); // Jerome
 wrapper.appendChild(iree.render()); // Iree
-wrapper.appendChild(jenny.render());
-wrapper.appendChild(joshua.render());
+wrapper.appendChild(jenny.render()); // Jenny
+wrapper.appendChild(ray.render()); // Ray
 wrapper.appendChild(joshua.render());

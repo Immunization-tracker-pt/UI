@@ -9,6 +9,10 @@
 
     .flex(column; flex-start; center;);
 
+    @media @desktop {
+        .tightContainer();
+    }
+
     img{
         margin-top: 2vh;
 
@@ -75,9 +79,16 @@
         @media @desktop {
             background: none;
             border: none;
+            
             .mid-syringe{
                 visibility: hidden;
             }
+
+            h3{
+                margin-top: 4%;
+                margin-bottom: 4%;
+            }
+
         }
     }
 
