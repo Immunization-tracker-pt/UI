@@ -41,6 +41,14 @@ const jenny = new ProfileCard({
         github: "https://github.com/jennyobryant"
 });
 
+const travis = new ProfileCard({
+        name: `Travis Little`,
+        imgSrc: `https://ca.slack-edge.com/T4JUEB3ME-UGF3BMAMC-f4ef142769e5-512`,        
+        role: "Back End Engineer",
+        description: "Back End Engineer",
+        github: "https://github.com/travislittle84"
+});
+
 const ray = new ProfileCard({
 name: 'Ray Aguilar',
 imgSrc: "https://media.licdn.com/dms/image/C4E03AQFV_B-IuQevrw/profile-displayphoto-shrink_200_200/0?e=1574899200&v=beta&t=tMk866CeW9eL2SB_uZX-Oa6LxVcfF2QV-MV-yuYO42w",
@@ -55,4 +63,4 @@ wrapper.appendChild(jerome.render()); // Jerome
 wrapper.appendChild(iree.render()); // Iree
 wrapper.appendChild(jenny.render()); // Jenny
 wrapper.appendChild(ray.render()); // Ray
-wrapper.appendChild(joshua.render());
+wrapper.appendChild(travis.render()); // Travis
